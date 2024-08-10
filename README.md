@@ -4,3 +4,5 @@ Libraries:
 - bcm2835
 - pigpio
 - Wiring Pi
+
+DS1302 transmits bytes with LSB first whereas I2C and SPI transmit MSB first.
