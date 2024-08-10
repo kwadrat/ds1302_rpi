@@ -1,0 +1,27 @@
+Wires between Raspberry Pi 3+ and DS1302
+
+(internal side of RPi board)                                      (edge of board)
+                                          ***********************
+                                                                *
+(to VCC pin) yellow/orange wire                3.3 V  [1]   [2] * 5 V
+                                                      [3]   [4] * 5 V
+                                                      [5]   [6] *
+                                                      [7]   [8] *
+                                                      [9]  [10] *
+                                                     [11]  [12] *
+                                                     [13]  [14] *
+                                                     [15]  [16] *
+                                                     [17]  [18] *
+(to I/O pin) yellow wire - GPIO10 on pin #19         [19]  [20] *
+(to CE pin) red wire - GPIO9 on pin #21              [21]  [22] *
+(to SCLK pin) green wire - GPIO11 on pin #23         [23]  [24] *
+                                                     [25]  [26] *
+                                                     [27]  [28] *
+                                                     [29]  [30] *
+                                                     [31]  [32] *
+                                                     [33]  [34] *
+                                                     [35]  [36] *
+                                                     [37]  [38] *
+(to GND pin) black wire                              [39]  [40] *
+                                                                *
+                                          ***********************
