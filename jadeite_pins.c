@@ -237,27 +237,27 @@ int main(int argc, char * argv[])
     if(bcm2835_init())
     {
         pins_begin();
-        if(has_command && ! strcmp(argv[1], "write_once"))
+        if(has_command && ! strcmp(argv[1], "--write_once"))
         {
             do_many_writes();
             option_done = 1;
         }
-        if(has_command && ! strcmp(argv[1], "write_ram_in_burst"))
+        if(has_command && ! strcmp(argv[1], "--write_ram_in_burst"))
         {
             do_massive_write_to_ram();
             option_done = 1;
         }
-        if(has_command && ! strcmp(argv[1], "read_clock"))
+        if(has_command && ! strcmp(argv[1], "--read_clock"))
         {
             do_read_burst(0xBF, 8); /* Clock burst */
             option_done = 1;
         }
-        if(has_command && ! strcmp(argv[1], "loop_clock"))
+        if(has_command && ! strcmp(argv[1], "--loop_clock"))
         {
             do_many_clock_bursts();
             option_done = 1;
         }
-        if(has_command && ! strcmp(argv[1], "read_ram"))
+        if(has_command && ! strcmp(argv[1], "--read_ram"))
         {
             int ram_size = 31;
             do_read_burst(0xFF, ram_size); /* RAM burst */
