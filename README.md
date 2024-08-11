@@ -1,5 +1,5 @@
 # ds1302_rpi
-Connect DS1302 Real-Time Clock (with 31 bytes of RAM) to Raspberry Pi
+Connect DS1302 Real-Time Clock (with 31 bytes of RAM) to Raspberry Pi 3 Model B+
 Libraries:
 - bcm2835
 - pigpio (not made yet)

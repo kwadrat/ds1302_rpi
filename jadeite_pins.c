@@ -3,7 +3,7 @@
 #include <string.h>
 #include <bcm2835.h>
 
-/* For Raspberry Pi 3 B+, DS1302 */
+/* For Raspberry Pi 3 Model B+, DS1302 */
 #define pin_clk_nr RPI_BPLUS_GPIO_J8_23
 #define pin_ce_nr RPI_BPLUS_GPIO_J8_21
 #define pin_io_nr RPI_BPLUS_GPIO_J8_19

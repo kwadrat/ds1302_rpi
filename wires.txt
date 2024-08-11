@@ -1,4 +1,4 @@
-Wires between Raspberry Pi 3+ and DS1302
+Wires between Raspberry Pi 3 Model B+ and DS1302
 
 (internal side of RPi board)                                      (edge of board)
                                           ***********************
