@@ -70,7 +70,7 @@ def pins_begin():
     else:
         GPIO.setwarnings(False)
         GPIO.setup(pin_ce_nr, GPIO.OUT)
-        GPIO.output(pin_ce_nr, GPIO.LOW)
+        ce_disable()
         work_as_in()
         GPIO.setup(pin_clk_nr, GPIO.OUT)
         clock_low()
