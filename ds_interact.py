@@ -26,7 +26,7 @@ def recognize_j_options():
                         help='Write some registers')
     parser.add_argument('--write_ram_in_burst',
                         action='store_true', default=False,
-                        help='Write some registers')
+                        help='Write all RAM cells using burst mode')
     parser.add_argument('--read_clock',
                         action='store_true', default=False,
                         help='Read RTC')
