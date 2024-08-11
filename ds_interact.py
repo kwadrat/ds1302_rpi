@@ -216,7 +216,7 @@ def do_many_clock_bursts():
 if __name__ == '__main__':
     parser, opt_bag = recognize_j_options()
     option_done = 0
-    error_occured = 1
+    error_occured = 0
     pins_begin()
     if opt_bag.write_once:
         do_many_writes()
@@ -235,8 +235,8 @@ if __name__ == '__main__':
         do_read_burst(0xFF, ram_size)  # RAM burst
         read_ram_byte_by_byte(ram_size)
         option_done = 1
-    error_occured = 0
     pins_end()
     if not option_done:
         parser.print_help()
+        error_occured = 1
     sys.exit(error_occured)
